@@ -197,3 +197,14 @@ kubectl get nodes
 kubectl get pods
 kubectl get svc 
 ````
+---
+
+````
+aws sts get-caller-identity
+````
+
+````
+aws eks update-cluster-config \
+    --name EKS_CLOUD \
+    --access-config authenticationMode=API_AND_CONFIG_MAP
+````
