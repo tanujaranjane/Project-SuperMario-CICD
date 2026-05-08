@@ -53,7 +53,7 @@ data "aws_subnets" "public" {
 # -------------------------
 
 resource "aws_eks_cluster" "example" {
-  name     = "EKS"
+  name     = "EKS-cloud"
   role_arn = aws_iam_role.example.arn
 
   # Attach cluster to VPC subnets
